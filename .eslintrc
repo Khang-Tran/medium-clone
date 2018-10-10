@@ -5,5 +5,21 @@
     "es6": true,
     "browser": true,
     "node": true
+  },
+  "rules": {
+    "linebreak-style": [
+      "warn"
+    ],
+    "react/jsx-filename-extension": [
+      "off",
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "arrow-parens": "off",
+    "comma-dangle": "off"
   }
 }

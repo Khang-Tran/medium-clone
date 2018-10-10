@@ -1,12 +1,8 @@
 <component name="ProjectDictionaryState">
   <dictionary name="cktra">
     <words>
+      <w>bcrypt</w>
       <w>defs</w>
-      <w>graphiql</w>
-      <w>refetch</w>
-      <w>signin</w>
-      <w>signout</w>
-      <w>signup</w>
     </words>
   </dictionary>
 </component>
