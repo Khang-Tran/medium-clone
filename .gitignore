@@ -60,6 +60,9 @@ typings/
 # dotenv environment variables file
 .env
 
-# Custom
+# Intellij IDEA
 .idea
-dist
+*.iml
+
+# Custom
+

@@ -1,0 +1,41 @@
+{
+  "name": "medium-clone",
+  "version": "1.0.0",
+  "description": "a clone version of medium.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint . --ext .js,.jsx",
+    "pre-commit": [
+      "lint"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khang-Tran/medium-clone.git"
+  },
+  "keywords": [
+    "medium-clone",
+    "react",
+    "redux",
+    "express",
+    "mongodb",
+    "graphql"
+  ],
+  "author": "Kael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khang-Tran/medium-clone/issues"
+  },
+  "homepage": "https://github.com/Khang-Tran/medium-clone#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "pre-commit": "^1.2.2"
+  }
+}
