@@ -6,8 +6,11 @@ const ArticleSchema = new Schema(
     text: String,
     title: String,
     description: String,
-    feature_img: String,
-    claps: Number,
+    img: String,
+    claps: {
+      type: Number,
+      default: 0
+    },
     createdDate: {
       type: Date,
       default: Date.now
