@@ -1,11 +1,11 @@
 const articleMutations = `
   extend type Mutation {
     addArticle(text: String!, title: String!, description: String!,
-     img: String): Article
+     img: String, tags: [TagInput]): Article
      
     clapArticle(id: ID!): Article
     
-    commentArticle(id: ID!): Article
+    commentArticle(id: ID!, comment: CommentInput!): Article
   }
 `;
 

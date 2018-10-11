@@ -1,7 +1,7 @@
 import cloudinary from 'cloudinary';
 
 export default {
-  addArticle: async (root, { text, title, description, img }, { ArticleModel }) => {
+  addArticle: async (root, { text, title, description, img, tags }, { ArticleModel }) => {
     let uploadResult = {};
     if (img) {
       uploadResult = await cloudinary.uploader.upload(img.path);
@@ -11,6 +11,7 @@ export default {
       text,
       title,
       description,
+      tags,
       img: uploadResult.url !== null ? uploadResult.url : ''
     }).save();
 
