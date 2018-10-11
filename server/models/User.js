@@ -11,6 +11,7 @@ const UserSchema = new Schema(
       type: Date,
       default: Date.now
     },
+    password: String,
     followers: [
       {
         type: mongoose.Schema.Types.ObjectId,
@@ -25,6 +26,7 @@ const UserSchema = new Schema(
     ]
   }
 );
+
 
 const UserModel = mongoose.model('User', UserSchema);
 

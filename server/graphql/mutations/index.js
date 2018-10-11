@@ -1,4 +1,5 @@
 import articleMutations from './articleMutations';
+import userMutations from './userMutations';
 
 const Mutation = `
   type Mutation {
@@ -6,6 +7,6 @@ const Mutation = `
   }
 `;
 
-const mutations = [Mutation, articleMutations];
+const mutations = [Mutation, articleMutations, userMutations];
 
 export { Mutation, mutations };

@@ -12,9 +12,18 @@ const articleType = `
     tags: [Tag]
   }
   
-  type Comment {
-    author: User
+  input CommentInput {
+    author: ID!
     text: String!
+  }
+  
+  type Comment {
+    author: ID!
+    text: String!
+  } 
+  
+  input TagInput {
+    name: String!
   }
   
   type Tag {
