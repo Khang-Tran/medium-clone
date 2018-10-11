@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import express from 'express';
 import mongoose from 'mongoose';
 import logger from 'morgan';
+import cloundinary from 'cloudinary';
 
 import schema from './graphql';
 import ArticleModel from './models/Article';
@@ -18,6 +19,11 @@ mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true})
   .then(() => console.log('Mongo database connected..'))
   .catch(err => console.log(`Errors occur when tried to connect the database: ${err}`));
 
+cloundinary.config({
+  cloud_name: process.env.CLOUDINARY_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_SECRET
+});
 
 const server = new ApolloServer({
   schema,
