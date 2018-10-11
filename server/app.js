@@ -1,13 +1,13 @@
-import express from 'express';
-import logger from 'morgan';
+import { ApolloServer } from 'apollo-server-express';
 import bodyParser from 'body-parser';
-import {ApolloServer} from 'apollo-server-express';
-import {makeExecutableSchema} from 'graphql-tools';
+import express from 'express';
 import mongoose from 'mongoose';
+import logger from 'morgan';
 
-import {resolvers, typeDefs} from './graphql';
+import schema from './graphql';
+import ArticleModel from './models/Article';
+import UserModel from './models/User';
 import routes from './routes';
-
 
 
 const app = express();
@@ -15,10 +15,6 @@ app.use(logger('combined'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-const schema = makeExecutableSchema({
-  typeDefs,
-  resolvers
-});
 
 mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true})
   .then(() => console.log('Mongo database connected..'))
@@ -30,14 +26,12 @@ app.use('/', routes);
 const server = new ApolloServer({
   schema,
   context: {
-
+    UserModel,
+    ArticleModel
   }
 });
 
 server.applyMiddleware({app});
-
-
-
 
 
 export default app;
