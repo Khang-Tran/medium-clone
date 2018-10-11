@@ -1,4 +1,6 @@
 import ArticleType from './articleType';
 import UserType from './userType';
 
-export { ArticleType, UserType };
+const types = [ArticleType, UserType];
+
+export { ArticleType, UserType, types };

@@ -1,12 +1,11 @@
 import { makeExecutableSchema } from 'graphql-tools';
-import merge from 'lodash.merge';
+import { queries } from './queries';
+import resolvers from './resolvers';
+import { types } from './types';
 
-import { ArticleType, UserType } from './types';
-
-const resolvers = {};
 const schema = makeExecutableSchema({
-  typeDefs: [ArticleType, UserType],
-  resolvers: merge(resolvers)
+  typeDefs: [...types, ...queries],
+  resolvers
 });
 
 export default schema;

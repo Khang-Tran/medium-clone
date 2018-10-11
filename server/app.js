@@ -7,8 +7,6 @@ import logger from 'morgan';
 import schema from './graphql';
 import ArticleModel from './models/Article';
 import UserModel from './models/User';
-import routes from './routes';
-
 
 const app = express();
 app.use(logger('combined'));
@@ -19,8 +17,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true})
   .then(() => console.log('Mongo database connected..'))
   .catch(err => console.log(`Errors occur when tried to connect the database: ${err}`));
-
-app.use('/', routes);
 
 
 const server = new ApolloServer({
