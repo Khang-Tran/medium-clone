@@ -11,7 +11,7 @@
   },
   "rules": {
     "linebreak-style": [
-      "warn"
+      "off"
     ],
     "react/jsx-filename-extension": [
       "off",
