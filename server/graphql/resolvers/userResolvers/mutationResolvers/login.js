@@ -1,11 +1,10 @@
 import { ApolloError, UserInputError } from 'apollo-server-express';
 import bcrypt from 'bcryptjs';
 import { createToken } from '../../../../helpers/utils';
-import validateRegisterInput from '../../../../validations/register';
 
 export default {
   login: async (root, { email, password }, { UserModel }) => {
-    const { errors, isValid } = validateRegisterInput({
+    const { errors, isValid } = validateLoginInput({
       email,
       password
     });

@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4017b2f8-78d3-479c-89ba-3d80aad90c1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/helpers/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/helpers/utils/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/validations/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/validations/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medium-clone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/medium-clone.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphql/mutations/articleMutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphql/mutations/articleMutations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/graphql/utils/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/helpers/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/helpers/utils/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/validations/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/validations/login.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +33,7 @@
           <entry key="babelrc" value="1" />
           <entry key="env" value="5" />
           <entry key="eslintrc" value="2" />
-          <entry key="js" value="53" />
+          <entry key="js" value="56" />
           <entry key="json" value="5" />
         </counts>
       </usages-collector>
@@ -54,7 +41,7 @@
         <counts>
           <entry key=".env file" value="5" />
           <entry key="JSON" value="8" />
-          <entry key="JavaScript" value="52" />
+          <entry key="JavaScript" value="55" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -63,7 +50,7 @@
           <entry key="babelrc" value="9" />
           <entry key="env" value="23" />
           <entry key="eslintrc" value="97" />
-          <entry key="js" value="6507" />
+          <entry key="js" value="6542" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -71,7 +58,7 @@
           <entry key=".env file" value="23" />
           <entry key="GraphQL Schema" value="22" />
           <entry key="JSON" value="106" />
-          <entry key="JavaScript" value="6485" />
+          <entry key="JavaScript" value="6520" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
@@ -86,6 +73,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/graphql/mutations/articleMutations.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/graphql/mutations/userMutations.js">
           <provider selected="true" editor-type-id="text-editor" />
@@ -104,10 +100,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/articleResolvers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+            <state relative-caret-position="417">
+              <caret line="32" column="12" selection-start-line="24" selection-start-column="4" selection-end-line="32" selection-end-column="12" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
               </folding>
@@ -115,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="150">
+              <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
               </folding>
@@ -130,8 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/validations/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="392">
+              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -140,27 +147,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/.env">
+        <entry file="file://$PROJECT_DIR$/server/helpers/utils/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            <state relative-caret-position="624">
+              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#34#65#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/lodash/constant.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/helpers/utils/index.js">
+        <entry file="file://$PROJECT_DIR$/server/graphql/mutations/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="37" column="117" selection-start-line="37" selection-start-column="117" selection-end-line="37" selection-end-column="117" />
+            <state relative-caret-position="200">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#34#65#0" expanded="true" />
+                <element signature="e#0#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,15 +176,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -243,8 +239,8 @@
         <option value="$PROJECT_DIR$/server/validations/register.js" />
         <option value="$PROJECT_DIR$/server/helpers/utils/index.js" />
         <option value="$PROJECT_DIR$/server/validations/login.js" />
-        <option value="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/register.js" />
         <option value="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/login.js" />
+        <option value="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/register.js" />
       </list>
     </option>
   </component>
@@ -1037,15 +1033,6 @@
               <item name="medium-clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="medium-clone" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="graphql" type="462c0819:PsiDirectoryNode" />
-              <item name="resolvers" type="462c0819:PsiDirectoryNode" />
-              <item name="userResolvers" type="462c0819:PsiDirectoryNode" />
-              <item name="queryResolvers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="medium-clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="medium-clone" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="validations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -1058,7 +1045,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/cktra/source/repos/medium-clone/server/graphql/queries/index.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539380860570" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539489713860" />
     <property name="jsgraphql-schema-editor-notification" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client/node_modules/eslint" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -1115,7 +1102,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25976000" />
+    <option name="totallyTimeSpent" value="27793000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1371,23 +1358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/mutations/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/mutations/articleMutations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.eslintrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1412,17 +1382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/helpers/utils/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="37" column="117" selection-start-line="37" selection-start-column="117" selection-end-line="37" selection-end-column="117" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#34#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -1440,10 +1399,47 @@
     <entry file="file://$PROJECT_DIR$/server/graphql/mutations/userMutations.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/helpers/utils/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#34#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/articleResolvers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphql/mutations/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphql/mutations/articleMutations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/validations/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="392">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
@@ -1460,20 +1456,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/register.js">
+    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        <state relative-caret-position="150">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/login.js">
+    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="417">
+          <caret line="32" column="12" selection-start-line="24" selection-start-column="4" selection-end-line="32" selection-end-column="12" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
           </folding>

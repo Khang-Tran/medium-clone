@@ -18,4 +18,4 @@ const validateLoginInput = data => {
   };
 };
 
-export default validateRegisterInput;
+export default validateLoginInput;

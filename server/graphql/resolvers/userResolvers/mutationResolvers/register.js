@@ -13,29 +13,20 @@ export default {
 
     if (!isValid) {
       throw new UserInputError(
-        'failed to register due to validation errors',
+        'failed to login due to validation errors',
         { errors }
       );
     }
 
     const user = await UserModel.findOne({ email });
-    if (user) {
-      throw new ApolloError(`user with email ${email} already existed.`);
+    if (!user) {
+      throw new ApolloError(`user with email ${email} not existed.`);
     }
-    let newUser = {};
-    try {
-      const salt = await bcrypt.genSalt(10);
-      const hash = await bcrypt.hash(password, salt);
-      newUser = await new UserModel({
-        name,
-        email,
-        password: hash
-      }).save();
-    }
-    catch (e) {
-      throw new ApolloError(`cannot create new user due to ${e}`);
+    const isValidPassword = await bcrypt.compare(password, user.password);
+    if (!isValidPassword) {
+      throw new ApolloError('Password is invalid');
     }
 
-    return { token: createToken(newUser, process.env.SECRET, '1hr') };
+    return { token: createToken(user, process.env.SECRET, '1hr') };
   }
 };

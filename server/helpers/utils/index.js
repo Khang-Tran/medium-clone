@@ -28,9 +28,6 @@ const isEmpty = value =>
 
 const validateInput = (input, inputName, minLength = 5, maxLength = 30) => {
   const errors = {};
-  if (validator.isEmpty(input)) {
-    errors[`${inputName}`] = `${inputName} is invalid.`;
-  }
   if (!validator.isLength(input, {
     min: minLength,
     max: maxLength
