@@ -2,19 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4017b2f8-78d3-479c-89ba-3d80aad90c1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Home/components/NewsFeed/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Home/components/PopularPosts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Home/components/PostTags/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Home/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/HoCs/withSession.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Home/components/Auths/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Home/components/Auths/Logout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Home/components/Auths/Register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Home/components/Auths/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/components/Logo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/commons/Error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/commons/Loading.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/queries/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/queries/userQueries/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/queryResolvers/getCurrentUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/cktra.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/cktra.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/MainContainer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MainContainer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/errorReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/palette.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/palette.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medium-clone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/medium-clone.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphql/mutations/userMutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphql/mutations/userMutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphql/queries/userQueries.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphql/queries/userQueries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/queryResolvers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/queryResolvers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/helpers/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/helpers/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/helpers/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/helpers/utils/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,32 +54,40 @@
     <session id="447760805">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="12" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.23" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="babelrc" value="1" />
-          <entry key="env" value="5" />
+          <entry key="env" value="7" />
           <entry key="eslintrc" value="2" />
-          <entry key="js" value="65" />
-          <entry key="json" value="6" />
+          <entry key="example" value="1" />
+          <entry key="graphql" value="2" />
+          <entry key="js" value="172" />
+          <entry key="json" value="10" />
           <entry key="ts" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="5" />
-          <entry key="JSON" value="9" />
-          <entry key="JavaScript" value="64" />
+          <entry key=".env file" value="8" />
+          <entry key="GraphQL" value="2" />
+          <entry key="JSON" value="13" />
+          <entry key="JavaScript" value="171" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -60,18 +95,21 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="babelrc" value="9" />
-          <entry key="env" value="23" />
+          <entry key="env" value="66" />
           <entry key="eslintrc" value="97" />
-          <entry key="js" value="9017" />
+          <entry key="example" value="4" />
+          <entry key="js" value="16052" />
+          <entry key="json" value="113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key=".env file" value="23" />
-          <entry key="GraphQL Schema" value="22" />
-          <entry key="JSON" value="106" />
-          <entry key="JavaScript" value="8942" />
-          <entry key="Less" value="53" />
+          <entry key=".env file" value="70" />
+          <entry key="GraphQL" value="1" />
+          <entry key="GraphQL Schema" value="24" />
+          <entry key="JSON" value="219" />
+          <entry key="JavaScript" value="15936" />
+          <entry key="Less" value="91" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
@@ -88,39 +126,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/MainContainer/index.js">
+        <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/queryResolvers/getCurrentUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+            <state relative-caret-position="175">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/queryResolvers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
               <folding>
-                <element signature="e#0#69#0" expanded="true" />
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/MainContainer/styles.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="850">
+              <caret line="34" column="25" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="25" />
               <folding>
                 <element signature="e#0#66#0" expanded="true" />
               </folding>
@@ -129,60 +171,67 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/PopularPosts/index.js">
+        <entry file="file://$PROJECT_DIR$/server/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="7" column="30" selection-end-line="23" />
+            <state relative-caret-position="275">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#0#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/NewsFeed/index.js">
+        <entry file="file://$PROJECT_DIR$/server/helpers/utils/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="23" selection-end-line="20" />
+            <state relative-caret-position="425">
+              <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#34#65#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/PostTags/index.js">
+        <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="408">
+              <caret line="25" column="56" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="56" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#0#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/client/src/HoCs/withSession.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+            <state relative-caret-position="175">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/icons/Search.d.ts">
+        <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/components/Logo.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/helpers/constants.js">
+        <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state relative-caret-position="175">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -210,20 +259,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/src/styles/globals.js" />
-        <option value="$PROJECT_DIR$/client/src/styles/mediaQueries.js" />
-        <option value="$PROJECT_DIR$/client/src/components/MainContainer/styles.js" />
-        <option value="$PROJECT_DIR$/client/src/index.js" />
-        <option value="$PROJECT_DIR$/client/src/actions/types.js" />
-        <option value="$PROJECT_DIR$/client/src/reducers/errorReducer.js" />
-        <option value="$PROJECT_DIR$/client/src/reducers/index.js" />
-        <option value="$PROJECT_DIR$/client/src/store/index.js" />
-        <option value="$PROJECT_DIR$/server/graphql/types/comment.js" />
-        <option value="$PROJECT_DIR$/server/graphql/types/tag.js" />
-        <option value="$PROJECT_DIR$/server/graphql/types/user.js" />
         <option value="$PROJECT_DIR$/server/models/Article.js" />
-        <option value="$PROJECT_DIR$/server/models/User.js" />
-        <option value="$PROJECT_DIR$/server/.env" />
         <option value="$PROJECT_DIR$/server/graphql/types/article.js" />
         <option value="$PROJECT_DIR$/server/graphql/types/index.js" />
         <option value="$PROJECT_DIR$/server/graphql/queries/articleQueries.js" />
@@ -232,27 +268,48 @@
         <option value="$PROJECT_DIR$/server/graphql/resolvers/articleResolvers.js" />
         <option value="$PROJECT_DIR$/server/package.json" />
         <option value="$PROJECT_DIR$/server/.babelrc" />
-        <option value="$PROJECT_DIR$/server/graphql/queries/userQueries.js" />
         <option value="$PROJECT_DIR$/server/graphql/queries/index.js" />
         <option value="$PROJECT_DIR$/server/graphql/index.js" />
-        <option value="$PROJECT_DIR$/server/app.js" />
-        <option value="$PROJECT_DIR$/client/src/styles/palette.js" />
         <option value="$PROJECT_DIR$/.eslintrc" />
         <option value="$PROJECT_DIR$/server/index.js" />
-        <option value="$PROJECT_DIR$/server/utils/index.js" />
-        <option value="$PROJECT_DIR$/server/helpers/constants.js" />
         <option value="$PROJECT_DIR$/server/validations/register.js" />
-        <option value="$PROJECT_DIR$/server/helpers/utils/index.js" />
         <option value="$PROJECT_DIR$/server/validations/login.js" />
-        <option value="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/login.js" />
-        <option value="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/register.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/client/src/components/MainContainer/index.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/index.js" />
         <option value="$PROJECT_DIR$/client/src/components/Pages/Home/components/PopularPosts/index.js" />
         <option value="$PROJECT_DIR$/client/src/components/Pages/Home/components/NewsFeed/index.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Pages/Home/index.js" />
         <option value="$PROJECT_DIR$/client/src/components/Pages/Home/components/PostTags/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Pages/Home/components/KeyLinks/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Pages/Home/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/components/Login/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/components/Auths/Login.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/server/.env.example" />
+        <option value="$PROJECT_DIR$/server/models/User.js" />
+        <option value="$PROJECT_DIR$/server/.env" />
+        <option value="$PROJECT_DIR$/server/graphql/mutations/userMutations.js" />
+        <option value="$PROJECT_DIR$/server/graphql/queries/userQueries.js" />
+        <option value="$PROJECT_DIR$/client/src/actions/types.js" />
+        <option value="$PROJECT_DIR$/client/src/reducers/authReducer.js" />
+        <option value="$PROJECT_DIR$/client/src/queries/userQueries/index.js" />
+        <option value="$PROJECT_DIR$/server/utils/index.js" />
+        <option value="$PROJECT_DIR$/server/helpers/constants.js" />
+        <option value="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/login.js" />
+        <option value="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/register.js" />
+        <option value="$PROJECT_DIR$/client/src/index.js" />
+        <option value="$PROJECT_DIR$/client/src/styles/palette.js" />
+        <option value="$PROJECT_DIR$/client/src/components/commons/Error.js" />
+        <option value="$PROJECT_DIR$/client/src/components/commons/Loading.js" />
+        <option value="$PROJECT_DIR$/client/package.json" />
+        <option value="$PROJECT_DIR$/server/helpers/utils/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Pages/Home/components/Auths/styles.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Pages/Home/components/Auths/Register.js" />
+        <option value="$PROJECT_DIR$/client/src/components/MainContainer/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Pages/Home/components/Auths/Logout.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Pages/Home/components/Auths/Login.js" />
+        <option value="$PROJECT_DIR$/server/app.js" />
+        <option value="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/queryResolvers/index.js" />
+        <option value="$PROJECT_DIR$/server/graphql/resolvers/userResolvers/queryResolvers/getCurrentUser.js" />
+        <option value="$PROJECT_DIR$/client/src/HoCs/withSession.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/index.js" />
       </list>
     </option>
   </component>
@@ -276,7 +333,7 @@
       <path value="$PROJECT_DIR$/server/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="78" />
     <option name="y" value="30" />
     <option name="width" value="2100" />
@@ -343,7 +400,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -375,6 +431,14 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medium-clone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medium-clone" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="MainContainer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -383,15 +447,6 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="medium-clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="medium-clone" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
               <item name="Home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -400,7 +455,6 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
               <item name="Home" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -410,7 +464,16 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Auths" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medium-clone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medium-clone" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Home" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="NavigationBar" type="462c0819:PsiDirectoryNode" />
@@ -421,21 +484,17 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
               <item name="Home" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="PopularPosts" type="462c0819:PsiDirectoryNode" />
+              <item name="NavigationBar" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="medium-clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="medium-clone" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="PostTags" type="462c0819:PsiDirectoryNode" />
+              <item name="queries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="medium-clone" type="b2602c69:ProjectViewProjectNode" />
@@ -460,22 +519,7 @@
               <item name="medium-clone" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="graphql" type="462c0819:PsiDirectoryNode" />
-              <item name="mutations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="medium-clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="medium-clone" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="graphql" type="462c0819:PsiDirectoryNode" />
               <item name="resolvers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="medium-clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="medium-clone" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="graphql" type="462c0819:PsiDirectoryNode" />
-              <item name="resolvers" type="462c0819:PsiDirectoryNode" />
-              <item name="articleResolvers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="medium-clone" type="b2602c69:ProjectViewProjectNode" />
@@ -498,12 +542,35 @@
               <item name="medium-clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="medium-clone" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="validations" type="462c0819:PsiDirectoryNode" />
+              <item name="graphql" type="462c0819:PsiDirectoryNode" />
+              <item name="resolvers" type="462c0819:PsiDirectoryNode" />
+              <item name="userResolvers" type="462c0819:PsiDirectoryNode" />
+              <item name="queryResolvers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medium-clone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medium-clone" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medium-clone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medium-clone" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medium-clone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medium-clone" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -511,7 +578,8 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/cktra/source/repos/medium-clone/server/graphql/queries/index.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539621001038" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539916196267" />
+    <property name="com.intellij.lang.jsgraphql.ide.injection.JSGraphQLLanguageInjectionUtil.gql" value="apollo" />
     <property name="jsgraphql-schema-editor-notification" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client/node_modules/eslint" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -529,13 +597,14 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\cktra\source\repos\medium-clone\server\helpers" />
       <recent name="C:\Users\cktra\source\repos\medium-clone\server" />
+      <recent name="C:\Users\cktra\source\repos\medium-clone\client\src\components\Pages\Home\components" />
+      <recent name="C:\Users\cktra\source\repos\medium-clone\server\helpers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -567,12 +636,20 @@
       <workItem from="1539235773224" duration="5255000" />
       <workItem from="1539492587416" duration="678000" />
       <workItem from="1539614597889" duration="4478000" />
-      <workItem from="1539619266066" duration="1576000" />
+      <workItem from="1539619266066" duration="8649000" />
+      <workItem from="1539631762587" duration="251000" />
+      <workItem from="1539632499597" duration="19000" />
+      <workItem from="1539636812488" duration="51000" />
+      <workItem from="1539639232885" duration="4564000" />
+      <workItem from="1539713522311" duration="5256000" />
+      <workItem from="1539805370512" duration="4137000" />
+      <workItem from="1539873980230" duration="14174000" />
+      <workItem from="1539960563648" duration="3664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34525000" />
+    <option name="totallyTimeSpent" value="73714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -584,10 +661,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1519" height="977" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1504" height="1003" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496633" visible="true" weight="0.28492773" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496633" visible="true" weight="0.25688705" />
       <window_info id="Structure" order="1" sideWeight="0.503367" side_tool="true" weight="0.2663455" />
       <window_info id="npm" order="2" sideWeight="0.5016835" side_tool="true" weight="0.24982794" />
       <window_info id="Image Layers" order="3" />
@@ -604,9 +680,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295711" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295711" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49965587" visible="true" weight="0.3295711" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49965587" visible="true" weight="0.2988741" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003441" side_tool="true" weight="0.3295711" />
-      <window_info anchor="bottom" id="GraphQL" order="11" weight="0.3295711" />
+      <window_info anchor="bottom" id="GraphQL" order="11" weight="0.3285568" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -626,141 +702,44 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/actions/types.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/PostTags/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="167">
+          <caret line="7" column="32" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/reducers/errorReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/mongoose/lib/index.js" />
-    <entry file="file://$PROJECT_DIR$/server/models/User.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/KeyLinks/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/types/comment.js" />
-    <entry file="file://$PROJECT_DIR$/server/graphql/types/tag.js" />
-    <entry file="file://$PROJECT_DIR$/server/models/Article.js">
+    <entry file="file://$PROJECT_DIR$/client/src/reducers/index.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/reducers/errorReducer.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/styles.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/components/Login/index.js" />
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        <state relative-caret-position="225">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/types/articleType.js">
+    <entry file="file://$PROJECT_DIR$/server/.env.example">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers.js" />
-    <entry file="file://$PROJECT_DIR$/server/graphql/queries/articleQueries.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/articleResolvers.js" />
-    <entry file="file://$PROJECT_DIR$/server/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/types/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/types/userType.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/queries/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/graphql/queries/userQueries.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/articleResolvers/mutationResolvers/addArticle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/mongodb-core/lib/connection/pool.js" />
-    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/queryResolvers/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/styles/mediaQueries.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -771,53 +750,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/lodash/constant.js" />
-    <entry file="file://$PROJECT_DIR$/server/app.js">
+    <entry file="file://$PROJECT_DIR$/server/models/User.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        <state relative-caret-position="25">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/.env" />
-    <entry file="file://$PROJECT_DIR$/server/graphql/mutations/articleMutations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/client/src/actions/types.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/reducers/authReducer.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/serviceWorker.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/graphql/mutations/userMutations.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/validations/register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/articleResolvers/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/validations/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/helpers/utils/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        <state relative-caret-position="75">
+          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -828,13 +776,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/register.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="224">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/queries/userQueries/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/MainContainer/styles.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/articleResolvers/mutationResolvers/commentArticle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/articleResolvers/mutationResolvers/clapArticle.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/articleResolvers/mutationResolvers/addArticle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#68#0" expanded="true" />
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/queryResolvers/getArticle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" lean-forward="true" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/queryResolvers/getAllArticles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -847,87 +842,210 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/styles/palette.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="408">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/commons/Loading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/queries/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/helpers/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/Auths/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="11" selection-start-line="24" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/MainContainer/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        <state relative-caret-position="325">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
             <element signature="e#0#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/MainContainer/styles.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/Auths/Logout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        <state relative-caret-position="350">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/icons/Search.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/Auths/styles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/helpers/constants.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/Auths/Register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1550">
+          <caret line="74" column="26" selection-start-line="74" selection-end-line="75" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/validations/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/commons/Error.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/validations/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/helpers/utils/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#34#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="25" column="56" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/mutationResolvers/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/queryResolvers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/graphql/resolvers/userResolvers/queryResolvers/getCurrentUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/HoCs/withSession.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/components/Logo.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/NavigationBar/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="850">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="25" />
           <folding>
             <element signature="e#0#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/PopularPosts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="7" column="30" selection-end-line="23" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/NewsFeed/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="23" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/components/PostTags/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Pages/Home/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

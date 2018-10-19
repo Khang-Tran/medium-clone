@@ -2,14 +2,14 @@ export default {
   palette: {
     primary: {
       light: '#E5E8F4',
-      main: '#283CA7',
-      dark: '#001777',
+      main: '#4ECDC4',
+      dark: '#1A936F',
       contrastText: '#fff'
     },
     secondary: {
-      light: '#f5f5f5',
-      main: '#e0e0e0',
-      dark: '#757575',
+      light: '#EEF0EB',
+      main: '#FFFFFF',
+      dark: '#E9F1F7',
       contrastText: '#000000'
     },
     background: {
@@ -18,6 +18,8 @@ export default {
     }
   },
   typography: {
-    fontFamily: '"Open Sans", "Helvetica", "Arial", sans-serif'
+    fontFamily: '"Open Sans", "Helvetica", "Arial", sans-serif',
+    colorTextPrimary: '#212121',
+    colorTextSecondary: '#757575'
   }
 };

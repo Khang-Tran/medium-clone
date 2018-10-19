@@ -1,7 +1,7 @@
 /* eslint-disable dot-notation */
 import jwt from 'jsonwebtoken';
 import validator from 'validator';
-import { inputNames } from '../constants';
+import { inputNames } from '../../helpers/constants';
 
 const clone = (objects = []) => {
   let mainObject = {};
@@ -14,9 +14,9 @@ const clone = (objects = []) => {
 
 
 const createToken = (user, secret, expiresIn) => {
-  const { username, email } = user;
+  const { name, email } = user;
   return jwt.sign({
-    username,
+    name,
     email
   }, secret, { expiresIn });
 };
@@ -32,7 +32,7 @@ const validateInput = (input, inputName, minLength = 5, maxLength = 30) => {
     min: minLength,
     max: maxLength
   })) {
-    errors[`${inputName}`] = `${inputName} must be at least ${minLength} and not greater than ${maxLength} characters`;
+    errors.message = `${inputName} must be at least ${minLength} and not greater than ${maxLength} characters`;
   }
   return errors;
 };
@@ -40,7 +40,7 @@ const validateInput = (input, inputName, minLength = 5, maxLength = 30) => {
 const validateEmail = (email, minLength = 5, maxLength = 30) => {
   let errors = {};
   if (!validator.isEmail(email)) {
-    errors.email = 'Email is invalid.';
+    errors.message = 'Email is invalid.';
   }
   else {
     errors = clone(

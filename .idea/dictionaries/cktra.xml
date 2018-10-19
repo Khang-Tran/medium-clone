@@ -3,6 +3,8 @@
     <words>
       <w>bcrypt</w>
       <w>defs</w>
+      <w>refetch</w>
+      <w>signout</w>
     </words>
   </dictionary>
 </component>

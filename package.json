@@ -6,7 +6,7 @@
   "scripts": {
     "start": "babel-node ./index.js",
     "lint": "eslint . --ext .js,.jsx",
-    "dev": "npm run dev --prefix ./server"
+    "dev": "concurrently --kill-others-on-fail \"npm run dev --prefix ./server\" \"npm start --prefix ./client\""
   },
   "repository": {
     "type": "git",
@@ -26,9 +26,9 @@
     "url": "https://github.com/Khang-Tran/medium-clone/issues"
   },
   "homepage": "https://github.com/Khang-Tran/medium-clone#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "concurrently": "^4.0.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.1.0",
     "eslint-config-react-app": "^3.0.3",

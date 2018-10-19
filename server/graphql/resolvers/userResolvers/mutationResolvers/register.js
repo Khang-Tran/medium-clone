@@ -1,5 +1,5 @@
-import { ApolloError, UserInputError } from 'apollo-server-express';
-import bcrypt from 'bcryptjs';
+import { ApolloError } from 'apollo-server-express';
+import { errorCode } from '../../../../helpers/constants';
 import { createToken } from '../../../../helpers/utils';
 import validateRegisterInput from '../../../../validations/register';
 
@@ -12,21 +12,24 @@ export default {
     });
 
     if (!isValid) {
-      throw new UserInputError(
-        'failed to login due to validation errors',
-        { errors }
-      );
+      throw new ApolloError(errors.message, errorCode.BAD_USER_INPUT);
     }
 
     const user = await UserModel.findOne({ email });
-    if (!user) {
-      throw new ApolloError(`user with email ${email} not existed.`);
+    if (user) {
+      throw new ApolloError(`user with email ${email} already existed.`, errorCode.EXISTED);
     }
-    const isValidPassword = await bcrypt.compare(password, user.password);
-    if (!isValidPassword) {
-      throw new ApolloError('Password is invalid');
-    }
+    try {
+      let newUser = await new UserModel({
+        name,
+        email,
+        password
+      }).save();
 
-    return { token: createToken(user, process.env.SECRET, '1hr') };
+
+      return { token: createToken(newUser, process.env.SECRET, '1hr') };
+    } catch (e) {
+      throw new ApolloError('cannot create new user.', errorCode.INTERNAL_ERROR, e);
+    }
   }
 };

@@ -1,22 +1,41 @@
+import ApolloClient from 'apollo-boost';
 import React from 'react';
+import { ApolloProvider } from 'react-apollo';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-
 import MainContainer from './components/MainContainer';
 import * as serviceWorker from './serviceWorker';
-import configuredStore from './store';
 import setGlobalStyles from './styles/globals';
 
 setGlobalStyles();
 
-const renderApp = () => {
-  const initialState = {};
-  const store = configuredStore(initialState);
+const client = new ApolloClient({
+  uri: 'http://localhost:5000/graphql',
+  fetchOptions: {
+    credentials: 'include'
+  },
+  request: operation => {
+    const token = localStorage.getItem('token');
+    operation.setContext({
+      headers: {
+        authorization: token
+      }
+    });
+  },
+  onError: ({ networkError }) => {
+    if (networkError) {
+      if (networkError.statusCode === 401) {
+        localStorage.removeItem('token');
+      }
+    }
+  }
+});
 
+
+const renderApp = () => {
   ReactDOM.render(
-    <Provider store={store}>
-      <MainContainer />
-    </Provider>,
+    <ApolloProvider client={client}>
+      <MainContainer/>
+    </ApolloProvider>,
     document.getElementById('root'),
   );
 };
