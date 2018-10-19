@@ -15,8 +15,6 @@ const Container = styled.div`
 `;
 
 const GridContainer = styled.div`
-  width: 95vw;
-  height: 95vh;
   align-self: center;
   justify-self: center;
   display: grid;
