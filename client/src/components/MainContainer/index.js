@@ -1,10 +1,10 @@
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
-import Logout from 'components/Pages/Home/components/Auths/Logout';
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import palette from '../../styles/palette';
 import Home from '../Pages/Home';
 import Login from '../Pages/Home/components/Auths/Login';
+import Logout from '../Pages/Home/components/Auths/Logout';
 import Register from '../Pages/Home/components/Auths/Register';
 
 const theme = createMuiTheme(palette);

@@ -3,14 +3,15 @@ import FormControl from '@material-ui/core/FormControl';
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 import Typography from '@material-ui/core/Typography';
-import Error from 'components/commons/Error';
-import Loading from 'components/commons/Loading';
-import { Container, Form } from 'components/Pages/Home/components/Auths/styles';
-import withSession from 'HoCs/withSession';
-import { REGISTER_USER } from 'queries/userQueries';
+
 import React from 'react';
 import { Mutation } from 'react-apollo';
 import { withRouter } from 'react-router-dom';
+import withSession from '../../../../../HoCs/withSession';
+import { REGISTER_USER } from '../../../../../queries/userQueries';
+import Error from '../../../../commons/Error';
+import Loading from '../../../../commons/Loading';
+import { Container, Form } from './styles';
 
 
 const initialState = {

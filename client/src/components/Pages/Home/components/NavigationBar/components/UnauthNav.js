@@ -1,7 +1,7 @@
 import Button from '@material-ui/core/Button/Button';
-import { LoginButton } from 'components/Pages/Home/components/NavigationBar/styles';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { LoginButton } from '../styles';
 
 const UnAuthNav = () => (
   <React.Fragment>

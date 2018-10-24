@@ -1,7 +1,7 @@
 import IconButton from '@material-ui/core/IconButton/IconButton';
 import AccountCircle from '@material-ui/core/SvgIcon/SvgIcon';
-import Logout from 'components/Pages/Home/components/Auths/Logout';
 import React from 'react';
+import Logout from '../../Auths/Logout';
 
 const AuthNav = () => (
   <React.Fragment>

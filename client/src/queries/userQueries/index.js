@@ -20,7 +20,6 @@ export const GET_CURRENT_USER = gql`
   query {
     getCurrentUser {
       name
-      joinDate
       email
     }
   }

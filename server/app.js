@@ -28,9 +28,16 @@ app.use(async (req, res, next) => {
   next();
 });
 
-mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true})
-  .then(() => console.log('Mongo database connected..'))
-  .catch(err => console.log(`Errors occur when tried to connect the database: ${err}`));
+if (process.env.NODE_ENV === 'test') {
+  mongoose.connect(process.env.MONGO_TEST_URI, { useNewUrlParser: true })
+    .then(() => console.log('Mongo database connected for testing..'))
+    .catch(err => console.log(`Errors occur when tried to connect the database: ${err}`));
+
+} else {
+  mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true })
+    .then(() => console.log('Mongo database connected..'))
+    .catch(err => console.log(`Errors occur when tried to connect the database: ${err}`));
+}
 
 cloundinary.config({
   cloud_name: process.env.CLOUDINARY_NAME,

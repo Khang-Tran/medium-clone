@@ -4,12 +4,13 @@ import Grid from '@material-ui/core/Grid/Grid';
 import Toolbar from '@material-ui/core/Toolbar/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Search from '@material-ui/icons/Search';
-import AuthNav from 'components/Pages/Home/components/NavigationBar/components/AuthNav';
-import NavItem from 'components/Pages/Home/components/NavigationBar/components/NavItem';
-import UnAuthNav from 'components/Pages/Home/components/NavigationBar/components/UnauthNav';
-import { Container } from 'components/Pages/Home/components/NavigationBar/styles';
-import withSession from 'HoCs/withSession';
+
 import React from 'react';
+import withSession from '../../../../../HoCs/withSession';
+import AuthNav from './components/AuthNav';
+import NavItem from './components/NavItem';
+import UnAuthNav from './components/UnauthNav';
+import { Container } from './styles';
 
 
 const NavigationBar = ({ session }) => {
