@@ -6,20 +6,16 @@ import Typography from '@material-ui/core/Typography';
 import Search from '@material-ui/icons/Search';
 
 import React from 'react';
-import withSession from '../../../../../HoCs/withSession';
-import AuthNav from './components/AuthNav';
-import NavItem from './components/NavItem';
-import UnAuthNav from './components/UnauthNav';
 import { Container } from './styles';
+import {} from 'apollo-client';
 
-
-const NavigationBar = ({ session }) => {
+const NavigationBar = () => {
   return (
     <Container>
-      <AppBar color={'secondary'}>
-        <Toolbar variant={'dense'}>
-          <Grid container item justify={'space-between'} alignItems={'center'} direction='row'>
-            <Button color={'primary'}>
+      <AppBar color="secondary">
+        <Toolbar variant="dense">
+          <Grid container item justify="space-between" alignItems="center" direction='row'>
+            <Button color="primary">
               Write a post
             </Button>
             <Typography variant='h3'>
@@ -27,14 +23,14 @@ const NavigationBar = ({ session }) => {
             </Typography>
             <div>
               <Search/>
-              {session && session.getCurrentUser ? <AuthNav/> : <UnAuthNav/>}
+              {/*currentUser ? <AuthNav/> : <UnAuthNav/>*/}
             </div>
           </Grid>
         </Toolbar>
-        <NavItem/>
       </AppBar>
     </Container>
   );
-};
+}
 
-export default withSession(NavigationBar);
+export default NavigationBar;
+

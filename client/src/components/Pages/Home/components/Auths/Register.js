@@ -7,10 +7,8 @@ import Typography from '@material-ui/core/Typography';
 import React from 'react';
 import { Mutation } from 'react-apollo';
 import { withRouter } from 'react-router-dom';
-import withSession from '../../../../../HoCs/withSession';
 import { REGISTER_USER } from '../../../../../queries/userQueries';
-import Error from '../../../../commons/Error';
-import Loading from '../../../../commons/Loading';
+import Spinner from '../../../../commons/Spinner';
 import { Container, Form } from './styles';
 
 
@@ -18,7 +16,8 @@ const initialState = {
   name: '',
   email: '',
   password: '',
-  passwordConfirmation: ''
+  passwordConfirmation: '',
+  errors: []
 };
 
 class Register extends React.Component {
@@ -32,16 +31,21 @@ class Register extends React.Component {
 
   handleSubmit = (event, register) => {
     event.preventDefault();
-    const isInvalid = this.validateForm();
-    if (!isInvalid) {
+    const isValid = this.isFormValid();
+    if (isValid) {
+      this.setState({ errors: [] });
       register()
         .then(async ({ data }) => {
           localStorage.setItem('token', data.register.token);
-          await this.props.refetch();
+          const { history } = this.props;
           this.clearState();
-          this.props.history.push('/');
+          history.push('/');
         })
-        .catch(error => {
+        .catch(err => {
+          const { errors } = this.state;
+          this.setState({
+            errors: errors.concat(err.message)
+          });
         });
     }
   };
@@ -51,17 +55,46 @@ class Register extends React.Component {
     this.setState({ [name]: value });
   };
 
-  validateForm = () => {
-    const { name, email, password, passwordConfirmation } = this.state;
+  isFormValid = () => {
+    const { errors } = this.state;
+    const error = {};
+    if (this.isFormEmpty(this.state)) {
+      error.message = 'Fill all the fields.';
+      this.setState({ errors: errors.concat(error) });
+    } else if (!this.isPasswordValid(this.state)) {
+      error.message = 'Password is invalid';
+      this.setState({ errors: errors.concat(error) });
+    }
+    return Object.keys(error).length === 0;
 
-    const isInvalid = !name || !email || !password
-      || password !== passwordConfirmation;
+  };
 
-    return isInvalid;
+  isPasswordValid = ({ password, passwordConfirmation }) => {
+    let isValid = true;
+    if (password.length < 6 || passwordConfirmation.length < 6) {
+      isValid = false;
+    } else if (password !== passwordConfirmation) {
+      isValid = false;
+    }
+    return isValid;
+  };
+
+
+  isFormEmpty = ({ name, email, password, passwordConfirmation }) => {
+    return !name.length || !email.length || !password.length || !passwordConfirmation.length;
+  };
+
+  handleInputError = (errors, inputName) => {
+    if (errors.length === 0) {
+      return false;
+    } else {
+      return errors.some(err => err.toLowerCase()
+        .includes(inputName));
+    }
   };
 
   render() {
-    const { name, email, password, passwordConfirmation } = this.state;
+    const { name, email, password, passwordConfirmation, errors } = this.state;
     const registerInfo = {
       name,
       email,
@@ -69,8 +102,8 @@ class Register extends React.Component {
     };
     return (
       <Mutation mutation={REGISTER_USER} variables={registerInfo}>
-        {(register, { data, loading, error }) => {
-          if (loading) return <Loading/>;
+        {(register, { loading }) => {
+          if (loading) return <Spinner/>;
           return (
             <Container>
               <Typography color='primary' variant='h3'>Join Medium</Typography>
@@ -79,29 +112,32 @@ class Register extends React.Component {
                   <InputLabel htmlFor='name'>
                     Name
                   </InputLabel>
-                  <Input value={name} id='name' name='name' autoFocus onChange={this.handleChange}/>
+                  <Input value={name} id='name' name='name' autoFocus onChange={this.handleChange}
+                         error={this.handleInputError(errors, 'name')}/>
                 </FormControl>
                 <FormControl margin='normal' required fullWidth>
                   <InputLabel htmlFor='email'>
                     Email
                   </InputLabel>
                   <Input value={email} id='email' name='email'
-                         onChange={this.handleChange}/>
+                         onChange={this.handleChange}
+                         error={this.handleInputError(errors, 'email')}/>
                 </FormControl>
                 <FormControl margin="normal" required fullWidth>
                   <InputLabel htmlFor="password">Password</InputLabel>
                   <Input value={password} name="password" type="password"
-                         onChange={this.handleChange}/>
+                         onChange={this.handleChange}
+                         error={this.handleInputError(errors, 'password')}/>
                 </FormControl>
                 <FormControl margin="normal" required fullWidth>
                   <InputLabel htmlFor="password">Retype Password</InputLabel>
                   <Input value={passwordConfirmation} name="passwordConfirmation" type="password"
-                         onChange={this.handleChange}/>
+                         onChange={this.handleChange}
+                         error={this.handleInputError(errors, 'password')}/>
                 </FormControl>
                 <Button type="submit" variant="contained" color="primary">
                   Get started
                 </Button>
-                {error && <Error error={error}/>}
               </Form>
             </Container>
           );
@@ -112,4 +148,4 @@ class Register extends React.Component {
 
 }
 
-export default withRouter(withSession(Register));
+export default withRouter(Register);

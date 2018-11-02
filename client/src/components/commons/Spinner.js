@@ -10,10 +10,10 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const Loading = () => (
+const Spinner = () => (
   <Container>
     <CircularProgress color='primary'/>
   </Container>
 );
 
-export default Loading;
+export default Spinner;
